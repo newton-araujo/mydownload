@@ -1,0 +1,39 @@
+.containerMain {
+    background: #ff4;
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.containerMenu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.imgLogo {
+    margin-top: 2rem;
+}
+
+.btns{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    background: #323139;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btns:hover {
+    background-color: #8C52FE;
+    padding: 17px;
+    transition: .2s;
+    font-weight: bold;
+    
+}
