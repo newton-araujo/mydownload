@@ -1,12 +1,20 @@
 import './App.css'
 import SideBar from './components/SideBar/SideBar'
+import Main from './screens/Main/Main'
 
 function App() {
  
 
   return (
     <>
-      <SideBar />
+      <div className='contentMain'>
+
+            <SideBar />
+
+            <Main />
+
+      </div>
+      
     </>
   )
 }

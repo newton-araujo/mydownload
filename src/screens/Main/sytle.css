@@ -1,0 +1,23 @@
+.screen_main{
+    background: #323139;
+    width: 100%;
+    padding: 20px;
+}
+
+.content_btn {
+
+    border: 1px solid #fff;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+&
+.content_btn button {
+    padding: 10px;
+    margin-top: 1rem;
+}
