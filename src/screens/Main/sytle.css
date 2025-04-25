@@ -5,8 +5,6 @@
 }
 
 .content_btn {
-
-    border: 1px solid #fff;
     width: 150px;
     height: 150px;
     display: flex;
@@ -14,10 +12,24 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 2rem;
+    box-shadow: 0 0.4px 10px rgba(255, 255, 255, 0.596);
+    background: #fffff233;
 }
 
-&
 .content_btn button {
     padding: 10px;
     margin-top: 1rem;
+    background-color:#8C52FE;
+    border: none;
+    width: 100px;
+    border-radius: 2rem;
+    color: #323139;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.content_btn button:hover {
+    background: #FFFF44;
 }

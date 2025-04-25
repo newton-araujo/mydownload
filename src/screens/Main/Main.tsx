@@ -20,7 +20,7 @@ function Main() {
                     <h4>Program teste</h4>
 
                     <button onClick={() => executarBat("C:\\Users\\newtonADM\\Documents\\instaladores\\app.bat")}>
-                            Teste
+                            INSTALL
                     </button>
 
                 </div>
