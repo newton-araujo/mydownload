@@ -1,6 +1,6 @@
 import './App.css'
 import SideBar from './components/SideBar/SideBar'
-import Main from './screens/Main/Main'
+import Start from './screens/Start/Start'
 
 function App() {
  
@@ -11,7 +11,7 @@ function App() {
 
             <SideBar />
 
-            <Main />
+            <Start />
 
       </div>
       

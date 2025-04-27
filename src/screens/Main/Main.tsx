@@ -17,7 +17,7 @@ function Main() {
 
                 <div className="content_btn">
 
-                    <h4>Program teste</h4>
+                    <h4 className='sub-title'>Program teste</h4>
 
                     <button onClick={() => executarBat("C:\\Users\\newtonADM\\Documents\\instaladores\\app.bat")}>
                             INSTALL
