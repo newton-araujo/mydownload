@@ -4,11 +4,12 @@ const { exec } = require("child_process");
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 1600,
-    height: 980,
+    width: 1980,
+    height: 1200,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
       contextIsolation: true,
+      nodeIntegration:false,
     },
   });
 

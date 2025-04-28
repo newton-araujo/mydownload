@@ -2,6 +2,7 @@ import './style.css'
 import { motion } from "motion/react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComputer, faLock, faFolderOpen, faRocket, faAtom} from '@fortawesome/free-solid-svg-icons';
+import  logo  from '../../../public/easydown.png'
 
 
 function Start() {
@@ -138,7 +139,11 @@ function Start() {
                     </div>
                 </motion.div>
 
+            </div>
 
+            <div className="footer">
+                <h5>Desenvolvimento - Newton Araujo</h5>
+                <img src={ logo}  alt="logo" width={100}/>
             </div>
 
         </div>

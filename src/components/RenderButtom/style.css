@@ -1,0 +1,31 @@
+:root {
+
+    --primary_color: #323139;
+    --secundary_color: #cb6be6;
+    --option_color: #FFFF44;
+    --color_box_shadow: 0 8px 10px rgb(112,112,112,0.6);
+    --font_size_sub_title: 3rem;
+    --color_subText:rgb(112,112,112);
+    --bg_container_desc: #32393923
+    
+}
+
+
+.contentRenderButtom {
+    background: url('../../../public/background_main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentTitle {
+    height: 8.5rem;
+    padding-left:1rem;
+    display: flex;
+    align-items: end;
+    color: #fff;
+    background: var(--primary_color);
+}

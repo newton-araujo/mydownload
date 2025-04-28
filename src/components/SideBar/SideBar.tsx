@@ -1,43 +1,30 @@
-import './style.css'
-import logo from '../../../public/easydown.png'
-import { useState } from 'react'
-
-function SideBar () {
-
-    const itemsMenu: string[] = ['Inicio','Administrativo', 'MvSoul', 'Telefonia','Recursos Humano','Diretoria','Drives','Impressoras','Manutenção','Eng. Clinica']
-
-    const [stateBtn, setStateBtn] = useState<string>('start')
-        
-
-    switch (stateBtn) {
-        case 'Inicio':
-            console.log("Tela main")
-            break;
-        
-        case 'Administrativo':
-            console.log("tela Administrativo")
-            
-            break;
-        default:
-            break;
-    }
+import './style.css';
+import logo from '../../../public/easydown.png';
 
 
-    return (
-        <div className="containerMain">
-            
-            <div className="imgLogo">
-                <img src={logo} alt="logo easy download" />
-            </div>
-
-            <div className='containerMenu'>
-                {itemsMenu.map((item, index) => {
-                    return <button key={index} className='btns' onClick={() => setStateBtn(item)}>{item}</button>
-                })}
-            </div>   
-
-        </div>
-    )
+interface SideBarProps {
+  onSelectScreen: (screen: string) => void;
 }
 
-export default SideBar
+function SideBar({ onSelectScreen }: SideBarProps) {  
+  const itemsMenu: string[] = ['Inicio', 'Administrativo', 'MvSoul', 'Telefonia', 'Recursos Humano', 'Diretoria', 'Drives', 'Impressoras', 'Manutenção', 'Eng. Clinica'];
+
+  return (
+    <div className="containerMain">
+      <div className="imgLogo">
+        <img src={logo} alt="logo easy download" />
+      </div>
+
+      <div className='containerMenu'>
+        {itemsMenu.map((item, index) => (
+          <button key={index} className='btns' onClick={() => onSelectScreen(item)}>
+            {item}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default SideBar;
+
